@@ -4,7 +4,7 @@ import TechStack from "./TechStack";
 
 const STATS = [
   ["90", "workflows in production"],
-  ["1,000+", "records AI-enriched"],
+  ["30,000+", "records AI-enriched"],
   ["7", "publish channels, one pipeline"],
   ["12h", "saved weekly, one client"],
 ];
