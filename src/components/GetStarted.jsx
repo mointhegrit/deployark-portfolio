@@ -52,8 +52,8 @@ export default function GetStarted() {
         </a>
         <p className="cta-reveal text-dust font-light text-sm mt-6">
           Or email{" "}
-          <a href="mailto:hello@deployark.com" className="underline hover:text-paper">
-            hello@deployark.com
+          <a href="mailto:mdmoinkhan5236@gmail.com" className="underline hover:text-paper">
+            mdmoinkhan5236@gmail.com
           </a>
         </p>
       </div>

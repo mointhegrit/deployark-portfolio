@@ -13,7 +13,7 @@ const COLUMNS = [
   {
     title: "Contact",
     links: [
-      ["hello@deployark.com", "mailto:hello@deployark.com"],
+      ["mdmoinkhan5236@gmail.com", "mailto:mdmoinkhan5236@gmail.com"],
       ["LinkedIn", "https://www.linkedin.com/in/mointhegrit/"],
       ["X (Twitter)", "https://x.com/mointhegrit/"],
       ["GitHub", "https://github.com/mointhegrit"],
