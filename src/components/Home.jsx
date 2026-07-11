@@ -5,6 +5,7 @@ import Philosophy from "./Philosophy";
 import Process from "./Process";
 import About from "./About";
 import Testimonials from "./Testimonials";
+import ClientLogos from "./ClientLogos";
 import GetStarted from "./GetStarted";
 
 export default function Home() {
@@ -17,6 +18,7 @@ export default function Home() {
       <Process />
       <About />
       <Testimonials />
+      <ClientLogos />
       <GetStarted />
     </>
   );

@@ -1,6 +1,5 @@
-import { useEffect, useRef } from "react";
-import gsap from "gsap";
 import { Star, Quote } from "lucide-react";
+import useMarquee from "../hooks/useMarquee";
 
 // Placeholder quotes for layout demo. Swap with real client reviews once collected.
 const REVIEWS = [
@@ -8,6 +7,7 @@ const REVIEWS = [
     quote:
       "The database used to be someone's part-time job. Now it updates itself every morning and nobody thinks about it. That's the whole point.",
     name: "Amara Osei",
+    title: "Operations Lead",
     company: "Northwind Marketing",
     rating: 5,
     initials: "AO",
@@ -16,6 +16,7 @@ const REVIEWS = [
     quote:
       "We asked for a system, not a slide deck. That's exactly what we got: fixed price, clear timeline, running before the deadline we agreed on.",
     name: "Daniel Reyes",
+    title: "Founder",
     company: "Cartwheel Goods",
     rating: 5,
     initials: "DR",
@@ -24,6 +25,7 @@ const REVIEWS = [
     quote:
       "What stood out was the handover. Everything documented, nothing hidden behind a login only Moin has access to. It's actually ours.",
     name: "Priya Nair",
+    title: "Head of Growth",
     company: "Fieldstone Agency",
     rating: 5,
     initials: "PN",
@@ -32,6 +34,7 @@ const REVIEWS = [
     quote:
       "Every automation ships with an error alert wired in. The first time something broke at 2 AM, we knew before our clients did.",
     name: "Tom Fischer",
+    title: "CEO",
     company: "Halden & Co.",
     rating: 5,
     initials: "TF",
@@ -40,6 +43,7 @@ const REVIEWS = [
     quote:
       "n8n and Claude, exactly as promised. No mystery stack, no vendor lock-in. If Moin walked away tomorrow, our team could still run it.",
     name: "Leah Kimura",
+    title: "Marketing Director",
     company: "Orbit Commerce",
     rating: 5,
     initials: "LK",
@@ -63,7 +67,7 @@ function ReviewCard({ r }) {
         <div>
           <p className="font-display text-base leading-none">{r.name}</p>
           <p className="font-mono text-[10px] uppercase tracking-wider text-ash/60 mt-1.5">
-            {r.company}
+            {r.title}, {r.company}
           </p>
         </div>
       </div>
@@ -72,31 +76,7 @@ function ReviewCard({ r }) {
 }
 
 export default function Testimonials() {
-  const trackRef = useRef(null);
-
-  useEffect(() => {
-    const track = trackRef.current;
-    let tween;
-    const ctx = gsap.context(() => {
-      const width = track.scrollWidth / 2;
-      tween = gsap.to(track, {
-        x: -width,
-        duration: 40,
-        ease: "none",
-        repeat: -1,
-      });
-    });
-    const pause = () => tween?.pause();
-    const resume = () => tween?.resume();
-    track.addEventListener("mouseenter", pause);
-    track.addEventListener("mouseleave", resume);
-    return () => {
-      track.removeEventListener("mouseenter", pause);
-      track.removeEventListener("mouseleave", resume);
-      ctx.revert();
-    };
-  }, []);
-
+  const trackRef = useMarquee(40);
   const doubled = [...REVIEWS, ...REVIEWS];
 
   return (
