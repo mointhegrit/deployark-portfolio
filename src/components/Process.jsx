@@ -8,12 +8,12 @@ const STEPS = [
   {
     n: "01",
     title: "Scope",
-    desc: "One call. You describe what eats your team's hours; I tell you if automation fixes it, what it costs, and when it ships. Fixed price, defined scope — agreed before any work starts.",
+    desc: "One call. You describe what eats your team's hours; I tell you if automation fixes it, what it costs, and when it ships. Fixed price, defined scope, agreed before any work starts.",
   },
   {
     n: "02",
     title: "Build",
-    desc: "n8n and Claude. That is the stack — boring, and it works. Every workflow ships with quality gates, error guards, and an audit trail. No black boxes.",
+    desc: "n8n and Claude. That is the stack. Boring, and it works. Every workflow ships with quality gates, error guards, and an audit trail. No black boxes.",
   },
   {
     n: "03",

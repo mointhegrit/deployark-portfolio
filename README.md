@@ -1,6 +1,6 @@
-# DeployArk — Portfolio Website
+# DeployArk, Portfolio Website
 
-Portfolio site for **Moin Khan / DeployArk** — the automation practice that delivers systems, not decks. AI workflow automation for PR & marketing agencies.
+Portfolio site for **Moin Khan / DeployArk**: the automation practice that delivers systems, not decks. AI workflow automation for marketing agencies.
 
 **Live:** deployed on Vercel · **Contact:** [cal.com/mointhegrit/30min](https://cal.com/mointhegrit/30min)
 
@@ -13,9 +13,9 @@ Portfolio site for **Moin Khan / DeployArk** — the automation practice that de
 
 ## Structure
 
-- `src/data/projects.js` — single source of truth for all case studies (summary, problem, solution, steps, outcome)
-- `src/components/` — one component per section; `CaseStudy.jsx` renders detail pages
-- `public/work/` — n8n workflow canvas screenshots
+- `src/data/projects.js`: single source of truth for all case studies (summary, problem, solution, steps, outcome)
+- `src/components/`: one component per section; `CaseStudy.jsx` renders detail pages
+- `public/work/`: n8n workflow canvas screenshots
 
 ## Develop
 

@@ -9,12 +9,12 @@ const CAPABILITIES = [
   {
     icon: Workflow,
     title: "AI & Workflow Automation",
-    body: "n8n, LLM agents, and structured AI output that replace manual processes end-to-end — with quality gates and error guards built in.",
+    body: "n8n, LLM agents, and structured AI output that replace manual processes end-to-end, with quality gates and error guards built in.",
   },
   {
     icon: Plug,
     title: "Integrations & APIs",
-    body: "Custom connectors between Airtable, Slack, Telegram, Gmail, CRMs — any platform with an API, wired into one system.",
+    body: "Custom connectors between Airtable, Slack, Telegram, Gmail, CRMs, any platform with an API, wired into one system.",
   },
   {
     icon: GaugeCircle,
@@ -61,7 +61,7 @@ export default function About() {
           <div className="about-reveal flex justify-center lg:justify-start">
             <img
               src="/headshot.jpg"
-              alt="Moin Khan — AI Automation Specialist"
+              alt="Moin Khan, AI Automation Specialist"
               className="w-64 h-64 md:w-72 md:h-72 rounded-full border border-ink/10 shadow-lg object-cover"
             />
           </div>
@@ -73,14 +73,14 @@ export default function About() {
               {"// AI Automation Specialist · DeployArk"}
             </p>
             <p className="about-reveal text-ash font-light text-lg leading-relaxed max-w-2xl">
-              I build AI automation systems for marketing agencies — journalist
+              I build AI automation systems for marketing agencies: journalist
               databases that maintain themselves, content pipelines that publish to seven
               channels at once, agents your team talks to in Slack. Fixed price, defined
               scope, delivered running.
             </p>
             <p className="about-reveal text-ash font-light text-lg leading-relaxed max-w-2xl mt-5">
               Most automation consultants deliver decks and roadmaps. I'm one senior
-              practitioner who ships working systems and hands them over documented — no
+              practitioner who ships working systems and hands them over documented. No
               juniors, no retainers, no black boxes.
             </p>
           </div>

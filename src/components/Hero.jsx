@@ -39,7 +39,7 @@ export default function Hero() {
 
       <div className="relative z-10 max-w-7xl mx-auto w-full px-6 md:px-12 pt-32 pb-16 grid lg:grid-cols-[55fr_45fr] gap-14 items-center">
         <div>
-          <p className="hero-reveal label-mono text-xs mb-8">{"// Moin Khan — AI Automation"}</p>
+          <p className="hero-reveal label-mono text-xs mb-8">{"// Moin Khan, AI Automation"}</p>
           <h1 className="hero-reveal font-display text-paper text-5xl md:text-7xl leading-[1.05] tracking-tight">
             Working <em className="italic">automation</em>,
             <br className="hidden md:block" /> handed over <em className="italic">running</em>.

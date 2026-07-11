@@ -23,7 +23,7 @@ function WorkRow({ project: p, index: i }) {
           {p.image ? (
             <img
               src={p.image}
-              alt={`${p.title} — n8n workflow canvas`}
+              alt={`${p.title}, n8n workflow canvas`}
               loading="lazy"
               className="w-full h-full object-cover transition-transform duration-700 hover:scale-[1.03]"
               style={{ objectPosition: "50% 30%" }}

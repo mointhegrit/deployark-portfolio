@@ -67,7 +67,7 @@ export default function CaseStudy() {
           <div className="cs-reveal rounded-sm border border-paper/10 bg-ash/30 p-2 mb-16">
             <img
               src={project.image}
-              alt={`${project.title} — n8n workflow canvas`}
+              alt={`${project.title}, n8n workflow canvas`}
               className="w-full rounded-none"
             />
           </div>

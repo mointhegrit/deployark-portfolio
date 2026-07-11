@@ -26,17 +26,17 @@ const BENEFITS = [
   {
     icon: Zap,
     title: "Faster response",
-    body: "A system answers in seconds — the follow-up email, the data lookup, the alert. Customers and journalists don't wait for someone to get to the inbox.",
+    body: "A system answers in seconds: the follow-up email, the data lookup, the alert. Customers and journalists don't wait for someone to get to the inbox.",
   },
   {
     icon: ShieldCheck,
     title: "Fewer human errors",
-    body: "Typos, missed steps, forgotten follow-ups — a workflow with validation gates does the same thing correctly every single run.",
+    body: "Typos, missed steps, forgotten follow-ups. A workflow with validation gates does the same thing correctly every single run.",
   },
   {
     icon: LineChart,
     title: "Everything auditable",
-    body: "Every system I ship logs its runs — what executed, what failed, what got published where. You see your operations instead of guessing.",
+    body: "Every system I ship logs its runs: what executed, what failed, what got published where. You see your operations instead of guessing.",
   },
   {
     icon: Layers,
@@ -79,7 +79,7 @@ export default function Impact() {
           <p className="impact-reveal text-dust font-light text-lg max-w-2xl mx-auto">
             Businesses lose hours every week to manual data entry, follow-up emails,
             report generation, and process coordination. Automation replaces that
-            busywork with systems that run consistently — so your team spends time on
+            busywork with systems that run consistently, so your team spends time on
             work that actually moves the business forward.
           </p>
         </div>
