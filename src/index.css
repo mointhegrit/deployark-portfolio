@@ -1,0 +1,87 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: #1a1a18;
+  color: #fafaf9;
+  font-family: "DM Sans", sans-serif;
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+}
+
+/* Global noise overlay */
+.noise-overlay {
+  pointer-events: none;
+  position: fixed;
+  inset: 0;
+  z-index: 999;
+  opacity: 0.05;
+  mix-blend-mode: overlay;
+}
+
+::selection {
+  background: #c47b3a;
+  color: #fafaf9;
+}
+
+.magnetic-btn {
+  transition: transform 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+.magnetic-btn:hover {
+  transform: scale(1.03);
+}
+
+.hover-lift {
+  transition: transform 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+.hover-lift:hover {
+  transform: translateY(-1px);
+}
+
+/* Space Mono // labels — always uppercase, letter-spaced, Ember */
+.label-mono {
+  font-family: "Space Mono", monospace;
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+  color: #c47b3a;
+}
+
+.protocol-spin {
+  animation: spin 8s linear infinite;
+}
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+.protocol-scan {
+  animation: scan 2.4s ease-in-out infinite;
+}
+@keyframes scan {
+  0% { transform: translateY(0); opacity: 0.9; }
+  50% { transform: translateY(196px); opacity: 0.9; }
+  100% { transform: translateY(0); opacity: 0.9; }
+}
+
+.protocol-wave {
+  stroke-dasharray: 400;
+  stroke-dashoffset: 400;
+  animation: wave 2.5s ease-in-out infinite;
+}
+@keyframes wave {
+  0% { stroke-dashoffset: 400; }
+  60% { stroke-dashoffset: 0; }
+  100% { stroke-dashoffset: -400; }
+}
