@@ -4,6 +4,7 @@ import Impact from "./Impact";
 import Philosophy from "./Philosophy";
 import Process from "./Process";
 import About from "./About";
+import Testimonials from "./Testimonials";
 import GetStarted from "./GetStarted";
 
 export default function Home() {
@@ -15,6 +16,7 @@ export default function Home() {
       <Philosophy />
       <Process />
       <About />
+      <Testimonials />
       <GetStarted />
     </>
   );
