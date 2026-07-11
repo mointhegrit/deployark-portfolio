@@ -26,7 +26,7 @@ export default function Navbar() {
         <span className="flex flex-col leading-none">
           <span className="font-display text-paper text-lg tracking-tight">DeployArk</span>
           <span className="label-mono text-[8px] hidden md:block mt-1">
-            {"// Automation Practice"}
+            {"// Moin Khan"}
           </span>
         </span>
       </a>
