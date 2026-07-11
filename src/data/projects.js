@@ -31,13 +31,13 @@ const PROJECTS = [
   {
     featured: true,
     slug: "journalist-database",
-    label: "// Client work — PR agency",
+    label: "// Client work — Marketing agency",
     title: "Journalist Database System",
     summary:
       "A daily scraper reads Techmeme, extracts journalist bylines with structured AI output, and keeps an Airtable database current — insert new, update existing. A separate backfill loop enriched 6,000 legacy journalist records without manual data entry.",
     tags: ["n8n", "Grok-4.1", "Airtable", "Structured Output", "Techmeme"],
     problem:
-      "A PR agency's journalist database goes stale the moment it's built. New reporters appear on beats daily, old contacts move outlets, and nobody has time to re-verify a thousand rows by hand — so pitches go to the wrong people.",
+      "A marketing agency's journalist database goes stale the moment it's built. New reporters appear on beats daily, old contacts move outlets, and nobody has time to re-verify a thousand rows by hand — so pitches go to the wrong people.",
     solution:
       "Two n8n workflows against one Airtable base. The daily scraper fetches Techmeme every morning, parses article bylines, and runs each through Grok-4.1 with a structured output parser to extract and enrich journalist details — then checks if the journalist already exists and either updates the row or inserts a new one. A separate backfill workflow looped the 6,000 existing legacy records through the same AI enrichment with a wait node for rate limiting.",
     outcome:
@@ -56,7 +56,7 @@ const PROJECTS = [
   {
     featured: true,
     slug: "journalist-updater",
-    label: "// Client work — PR agency",
+    label: "// Client work — Marketing agency",
     title: "Journalist Updater Agent",
     summary:
       "Walks the journalist database row by row, spots missing fields, and fills them using live AI web research — including a dedicated phone-number finder with deep-research fallback. Only writes back when enrichment is actually found.",
@@ -80,10 +80,10 @@ const PROJECTS = [
   {
     featured: true,
     slug: "newsjack-agent",
-    label: "// Client work — PR agency",
+    label: "// Client work — Marketing agency",
     title: "NewsJack Agent",
     summary:
-      "The PR team asks for newsjacking angles in Slack; the agent finds recent relevant articles, matches them against client positioning, and returns formatted opportunities with one-click send buttons. Separate prod and test channel routing built in.",
+      "The marketing team asks for newsjacking angles in Slack; the agent finds recent relevant articles, matches them against client positioning, and returns formatted opportunities with one-click send buttons. Separate prod and test channel routing built in.",
     tags: ["n8n", "AI Agent", "Slack", "Airtable", "OpenRouter", "Zoho"],
     problem:
       "Newsjacking only works fast — a story breaks, and the pitch has to land while it's hot. But finding the right breaking article, matching it to the right client angle, and formatting a pitch takes the team an hour. By then the window is closing.",
@@ -105,7 +105,7 @@ const PROJECTS = [
   {
     featured: true,
     slug: "blog-generator",
-    label: "// Client work — PR agency",
+    label: "// Client work — Marketing agency",
     title: "Blog Content Generator",
     summary:
       "Five stages, each on the model best suited for it: outline generation, per-topic research agents, final drafting on Claude Sonnet 4.5, title generation on GPT-5 — wired to a custom web app and Slack. A blog draft that used to take a day now takes minutes.",

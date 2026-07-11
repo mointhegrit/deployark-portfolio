@@ -73,7 +73,7 @@ export default function About() {
               {"// AI Automation Specialist · DeployArk"}
             </p>
             <p className="about-reveal text-ash font-light text-lg leading-relaxed max-w-2xl">
-              I build AI automation systems for PR and marketing agencies — journalist
+              I build AI automation systems for marketing agencies — journalist
               databases that maintain themselves, content pipelines that publish to seven
               channels at once, agents your team talks to in Slack. Fixed price, defined
               scope, delivered running.

@@ -32,7 +32,7 @@ export default function Footer() {
           </div>
           <p className="label-mono text-[9px] mt-3">{"// Moin Khan"}</p>
           <p className="text-dust font-light mt-4 max-w-xs">
-            AI workflow automation for PR & marketing agencies.
+            AI workflow automation for marketing agencies.
           </p>
           <SocialLinks size={20} className="mt-6" />
         </div>
