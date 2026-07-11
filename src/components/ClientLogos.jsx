@@ -8,7 +8,7 @@ const CLIENTS = [
 
 function ClientCard({ c }) {
   return (
-    <div className="shrink-0 w-[220px] h-[120px] bg-paper rounded-sm border border-paper/10 flex flex-col items-center justify-center gap-3 mr-6 px-6">
+    <div className="shrink-0 w-[220px] h-[120px] bg-ash rounded-sm border border-paper/10 flex flex-col items-center justify-center gap-3 mr-6 px-6">
       <img
         src={c.logo}
         alt={c.name}
@@ -16,7 +16,7 @@ function ClientCard({ c }) {
         className="object-contain max-w-[140px]"
       />
       {c.showName && (
-        <span className="font-display text-ink text-sm">{c.name}</span>
+        <span className="font-display text-paper text-sm">{c.name}</span>
       )}
     </div>
   );
