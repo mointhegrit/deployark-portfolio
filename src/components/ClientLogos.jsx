@@ -2,29 +2,34 @@ import useMarquee from "../hooks/useMarquee";
 
 // Real clients only. Add here as new engagements ship.
 const CLIENTS = [
-  { name: "SparkPR", logo: "/clients/sparkpr.svg", height: 28 },
-  { name: "1Kosmos", logo: "/clients/1kosmos-mark.png", height: 44, showName: true },
+  { name: "SparkPR", note: "PR & marketing agency", logo: "/clients/sparkpr.svg", height: 26 },
+  { name: "1Kosmos", note: "Identity security platform", logo: "/clients/1kosmos-mark.png", height: 40 },
 ];
 
 function ClientCard({ c }) {
   return (
-    <div className="shrink-0 w-[220px] h-[120px] bg-ash rounded-sm border border-paper/10 flex flex-col items-center justify-center gap-3 mr-6 px-6">
-      <img
-        src={c.logo}
-        alt={c.name}
-        style={{ height: c.height }}
-        className="object-contain max-w-[140px]"
-      />
-      {c.showName && (
-        <span className="font-display text-paper text-sm">{c.name}</span>
-      )}
+    <div className="group shrink-0 w-[300px] bg-ash rounded-sm border-t-2 border-t-transparent hover:border-t-ember border-x border-b border-paper/10 mr-6 px-8 pt-7 pb-6 transition-all duration-300 hover:-translate-y-1 hover:shadow-xl">
+      <div className="h-14 flex items-center">
+        <img
+          src={c.logo}
+          alt={c.name}
+          style={{ height: c.height }}
+          className="object-contain max-w-[150px]"
+        />
+      </div>
+      <div className="mt-6 pt-5 border-t border-paper/10">
+        <p className="font-display text-paper text-lg">{c.name}</p>
+        <p className="font-mono text-[10px] uppercase tracking-wider text-dust mt-1.5">
+          {c.note}
+        </p>
+      </div>
     </div>
   );
 }
 
 export default function ClientLogos() {
-  const trackRef = useMarquee(28);
-  const doubled = [...CLIENTS, ...CLIENTS, ...CLIENTS, ...CLIENTS];
+  const trackRef = useMarquee(30);
+  const doubled = [...CLIENTS, ...CLIENTS, ...CLIENTS];
 
   return (
     <section className="bg-ink py-24 overflow-hidden">
