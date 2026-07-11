@@ -34,14 +34,14 @@ const PROJECTS = [
     label: "// Client work — PR agency",
     title: "Journalist Database System",
     summary:
-      "A daily scraper reads Techmeme, extracts journalist bylines with structured AI output, and keeps an Airtable database current — insert new, update existing. A separate backfill loop enriched 1,000 legacy journalist records without manual data entry.",
+      "A daily scraper reads Techmeme, extracts journalist bylines with structured AI output, and keeps an Airtable database current — insert new, update existing. A separate backfill loop enriched 6,000 legacy journalist records without manual data entry.",
     tags: ["n8n", "Grok-4.1", "Airtable", "Structured Output", "Techmeme"],
     problem:
       "A PR agency's journalist database goes stale the moment it's built. New reporters appear on beats daily, old contacts move outlets, and nobody has time to re-verify a thousand rows by hand — so pitches go to the wrong people.",
     solution:
-      "Two n8n workflows against one Airtable base. The daily scraper fetches Techmeme every morning, parses article bylines, and runs each through Grok-4.1 with a structured output parser to extract and enrich journalist details — then checks if the journalist already exists and either updates the row or inserts a new one. A separate backfill workflow looped the 1,000 existing legacy records through the same AI enrichment with a wait node for rate limiting.",
+      "Two n8n workflows against one Airtable base. The daily scraper fetches Techmeme every morning, parses article bylines, and runs each through Grok-4.1 with a structured output parser to extract and enrich journalist details — then checks if the journalist already exists and either updates the row or inserts a new one. A separate backfill workflow looped the 6,000 existing legacy records through the same AI enrichment with a wait node for rate limiting.",
     outcome:
-      "The database now maintains itself: new tech journalists appear in Airtable the morning they publish, existing records stay current, and the 1,000-contact backlog was enriched by machine instead of by an intern with a spreadsheet. The team pitches from live data.",
+      "The database now maintains itself: new tech journalists appear in Airtable the morning they publish, existing records stay current, and the 6,000-contact backlog was enriched by machine instead of by an intern with a spreadsheet. The team pitches from live data.",
     steps: [
       "Schedule trigger fetches the Techmeme front page daily",
       "Parser extracts articles; each item enters the enrichment loop",
@@ -49,7 +49,7 @@ const PROJECTS = [
       "Validity filter drops non-journalist entries",
       "Airtable lookup checks whether the journalist already exists",
       "Existing records get updated; new journalists get inserted",
-      "Separate backfill flow processed 1,000 legacy rows through the same AI enrichment, rate-limited with wait nodes",
+      "Separate backfill flow processed 6,000 legacy rows through the same AI enrichment, rate-limited with wait nodes",
     ],
     image: "/work/journalist-database.png",
   },
