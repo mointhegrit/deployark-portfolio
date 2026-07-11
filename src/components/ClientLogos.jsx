@@ -32,7 +32,7 @@ export default function ClientLogos() {
   const doubled = [...CLIENTS, ...CLIENTS, ...CLIENTS];
 
   return (
-    <section className="bg-ink py-24 overflow-hidden">
+    <section id="clients" className="bg-ink py-24 overflow-hidden">
       <div className="max-w-6xl mx-auto px-6 md:px-12 text-center mb-14">
         <p className="label-mono text-xs mb-4">{"// Who I've worked with"}</p>
         <h2 className="font-display text-paper text-3xl md:text-5xl">

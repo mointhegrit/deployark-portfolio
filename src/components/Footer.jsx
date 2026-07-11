@@ -8,6 +8,7 @@ const COLUMNS = [
       ["Work", "/#work"],
       ["Process", "/#process"],
       ["About", "/#about"],
+      ["Clients", "/#clients"],
     ],
   },
   {

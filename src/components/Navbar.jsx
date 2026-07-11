@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import ArkMark from "./ArkMark";
 import SocialLinks from "./SocialLinks";
 
-const LINKS = ["Work", "Process", "About"];
+const LINKS = ["Work", "Process", "About", "Clients"];
 
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
