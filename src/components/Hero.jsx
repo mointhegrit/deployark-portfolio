@@ -39,14 +39,16 @@ export default function Hero() {
 
       <div className="relative z-10 max-w-7xl mx-auto w-full px-6 md:px-12 pt-32 pb-16 grid lg:grid-cols-[55fr_45fr] gap-14 items-center">
         <div>
-          <p className="hero-reveal label-mono text-xs mb-8">{"// Automation Practice"}</p>
+          <p className="hero-reveal label-mono text-xs mb-8">{"// Moin Khan — AI Automation"}</p>
           <h1 className="hero-reveal font-display text-paper text-5xl md:text-7xl leading-[1.05] tracking-tight">
-            The automation practice that delivers{" "}
-            <em className="italic">systems</em>,
-            <br className="hidden md:block" /> not <em className="italic">decks</em>.
+            Working <em className="italic">automation</em>,
+            <br className="hidden md:block" /> handed over <em className="italic">running</em>.
           </h1>
           <p className="hero-reveal text-dust text-lg md:text-xl font-light mt-8 max-w-md">
-            Fixed price. Defined scope. Handed over running.
+            I design and build AI workflow systems for agencies. n8n + Claude Code.
+          </p>
+          <p className="hero-reveal font-mono text-paper/80 text-xs uppercase tracking-[0.18em] mt-3">
+            Systems that ship.
           </p>
           <div className="hero-reveal flex flex-wrap items-center gap-4 mt-10">
             <a
