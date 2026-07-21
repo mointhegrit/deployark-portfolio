@@ -21,7 +21,13 @@ export default function CaseStudy() {
 
   useEffect(() => {
     window.scrollTo(0, 0);
-  }, [slug]);
+    if (project) {
+      document.title = `${project.title}, DeployArk`;
+    }
+    return () => {
+      document.title = "DeployArk, AI Automation Practice";
+    };
+  }, [slug, project]);
 
   useEffect(() => {
     if (!project) return;

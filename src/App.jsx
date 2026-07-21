@@ -4,8 +4,11 @@ import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import Home from "./components/Home";
 import CaseStudy from "./components/CaseStudy";
+import useAnalyticsPageview from "./hooks/useAnalyticsPageview";
 
 function App() {
+  useAnalyticsPageview();
+
   return (
     <>
       <NoiseOverlay />
