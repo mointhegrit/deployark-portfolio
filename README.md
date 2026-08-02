@@ -1,6 +1,6 @@
 # DeployArk, Portfolio Website
 
-Portfolio site for **Moin Khan / DeployArk**: the automation practice that delivers systems, not decks. AI workflow automation for marketing agencies.
+Portfolio site for **Moin Khan / DeployArk**: the automation practice that delivers systems, not decks. AI workflow automation for PR and marketing agencies.
 
 **Live:** deployed on Vercel · **Contact:** [cal.com/mointhegrit/30min](https://cal.com/mointhegrit/30min)
 
